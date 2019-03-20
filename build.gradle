@@ -32,16 +32,7 @@ description = "A Jenkins plugin that installs Terraform as a build wrapper for i
 jenkinsPlugin {
     coreVersion = "1.580"
     shortName = "terraform"
-    displayName = "Terraform Plugin"
-    url = "https://wiki.jenkins-ci.org/display/JENKINS/Terraform+Plugin"
-    gitHubUrl = "https://github.com/jenkinsci/terraform-plugin.git"
-    developers {
-        developer {
-            id "dpires"
-            name "David Pires"
-            email "david.pires@gmail.com"
-        }
-    }
+    displayName = "Terraform Enterprise Plugin"
 }
 
 clean {
@@ -56,3 +47,4 @@ tasks.withType(JavaCompile) {
 release {
     tagTemplate = "$name-$version"
 }
+

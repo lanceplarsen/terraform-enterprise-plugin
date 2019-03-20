@@ -6,6 +6,9 @@ f = namespace('/lib/form')
 f.block() {
     f.div(style: "margin: 0px 0px") {
         f.table(style: "width: 100%") {
+			f.entry(title: 'Workspace', field: 'workspace', description: 'TFE workspace') {
+				f.textbox();
+			}
             f.entry(field: 'terraformInstallation', title: _('Terraform Installation')) {
                 f.select();
             }
